@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            
+            List {
+                
+                Section {
+                    
+                    ForEach(Love.allCases, id: \.self) { proj in
+                        
+                        NavigationLink(destination: proj.destination) {
+                            
+                            Text(proj.rawValue)
+                        }
+                    }
+                    
+                } header: {
+                    
+                    Text("Love")
+                        .font(.headline)
+                        .foregroundStyle(.black)
+                }
+            }
+            
         }
-        .padding()
+        .accentColor(.white)
     }
 }
 
