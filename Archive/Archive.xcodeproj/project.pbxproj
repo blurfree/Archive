@@ -64,7 +64,6 @@
 				47B5ECF82C7EF44D00B7F89F /* Utils */,
 				4734A1932C7BA17200317948 /* Assets.xcassets */,
 				4734A1952C7BA17200317948 /* Preview Content */,
-				47B5ECFE2C7F3C4B00B7F89F /* UprisingHeartView.swift */,
 			);
 			path = Archive;
 			sourceTree = "<group>";
@@ -107,6 +106,7 @@
 		47B5ED012C7F458500B7F89F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				47B5ECFE2C7F3C4B00B7F89F /* UprisingHeartView.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
